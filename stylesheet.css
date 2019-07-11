@@ -1,0 +1,120 @@
+.title {
+    font-size: 70px;
+    font-family: Helvetica;
+    font-weight: 500;
+    color: #1A1819;
+}
+
+#cvlink {
+    color: #7C862A;
+    text-decoration-line: none; /* no underline */
+}
+
+#cvlink:visited {
+    color: #758538;
+}
+
+#githublink {
+    color: #F7C839;
+    text-decoration-line: none; /* no underline */
+}
+
+#githublink:visited {
+    color: #DE8702;
+}
+
+img {
+    width: 300px;
+    height: auto;
+    padding-right: 50px;
+}
+
+html, body {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.descriptions {
+    display: flex;
+    height: 100%;
+    margin: 0px;
+    padding-right: 50px;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+@media screen and (max-width: 750px) {
+    .title {
+        font-size: 55px;
+        font-family: Helvetica;
+        font-weight: 500;
+        color: #1A1819;
+    }
+
+    img {
+        width: 250px;
+        height: auto;
+        padding-left: 10px;
+    }
+
+    html, body {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        margin: 0px;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        padding-top: 10px;
+    }
+
+    .descriptions {
+        height: 30%;
+        display: flex;
+        margin: 0px;
+        padding: 10px;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 550px) {
+    .title {
+        font-size: 65px;
+        font-family: Helvetica;
+        font-weight: 500;
+        color: #1A1819;
+    }
+
+    img {
+        display: none;
+    }
+
+    html, body {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        margin: 0px;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+    .descriptions {
+        height: 30%;
+        display: flex;
+        margin: 0px;
+        padding: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+}
