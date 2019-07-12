@@ -14,6 +14,10 @@
     color: #758538;
 }
 
+#cvlink:hover{
+    color: #bfcf3e;
+}
+
 #githublink {
     color: #F7C839;
     text-decoration-line: none; /* no underline */
@@ -21,6 +25,10 @@
 
 #githublink:visited {
     color: #DE8702;
+}
+
+#githublink:hover{
+    color: #fad669;
 }
 
 img {
@@ -117,4 +125,19 @@ html, body {
         align-items: flex-start;
         justify-content: center;
     }
+}
+
+.blink {
+  animation: blink-animation 1s steps(5, start) 2;
+  -webkit-animation: blink-animation 1s steps(5, start) 2;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
